@@ -10,6 +10,8 @@ export const Container = styled.View`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  opacity: ${props => (props.past ? 0.6 : 1)};
 `;
 
 export const Left = styled.View`
@@ -20,7 +22,7 @@ export const Left = styled.View`
 
 export const Avatar = styled.Image`
   width: 50px;
-  width: 50px;
+  height: 50px;
   border-radius: 25px;
 `;
 
