@@ -18,6 +18,7 @@ export default function DateInput({ date, onChange }) {
     if (date2 !== undefined) {
       onChange(date2);
     }
+    setOpened(!opened);
   }
 
   return (
