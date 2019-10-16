@@ -34,9 +34,13 @@ target 'modulo10gobarbermobilefront' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+
 
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+
+  pod 'CodePush', :path => '../node_modules/react-native-code-push'
 
   target 'modulo10gobarbermobilefrontTests' do
     inherit! :search_paths
