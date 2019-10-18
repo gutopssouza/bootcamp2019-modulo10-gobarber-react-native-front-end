@@ -40,6 +40,9 @@ target 'modulo10gobarbermobilefront' do
 
   pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
 
+
+  pod 'react-native-onesignal', :path => '../node_modules/react-native-onesignal'
+
   pod 'CodePush', :path => '../node_modules/react-native-code-push'
 
   target 'modulo10gobarbermobilefrontTests' do
