@@ -88,7 +88,7 @@ import com.android.build.OutputFile
 
 project.ext.react = [
     entryFile: "index.js",
-    enableHermes: true,  // clean and rebuild if changing
+    enableHermes: false,  // clean and rebuild if changing
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
@@ -164,14 +164,23 @@ android {
     }
     buildTypes {
         debug {
+            buildConfigField "String", "CODEPUSH_KEY", '""'
             signingConfig signingConfigs.debug
         }
+
+        releaseStaging {
+          buildConfigField "String", "CODEPUSH_KEY", '"UB1ZA9TurWrQ1qJfInFc471KlHqbwcuEyz7kK"'
+
+          matchingFallbacks = ['debug', 'release']
+        }
+
         release {
             // Caution! In production, you need to generate your own keystore file.
             // see https://facebook.github.io/react-native/docs/signed-apk-android.
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            buildConfigField "String", "CODEPUSH_KEY", '"xAsWj78-7vkJdTTyxjhuq7xJiGQqrT1aS1DtQ"'
         }
     }
     // applicationVariants are e.g. debug, release
