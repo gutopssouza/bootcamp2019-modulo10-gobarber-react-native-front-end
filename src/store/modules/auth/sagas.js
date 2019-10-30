@@ -1,5 +1,5 @@
 import { Alert } from 'react-native';
-import { takeLatest, call, put, all, delay } from 'redux-saga/effects';
+import { takeLatest, call, put, all } from 'redux-saga/effects';
 
 import api from '~/services/api';
 
@@ -46,7 +46,7 @@ export function* signUp({ payload }) {
 
     // history.push('/');
   } catch (err) {
-    console.tron.log(err);
+    // console.tron.log(err);
     Alert.alert(
       'Falha no cadastro',
       'Falha no cadastro, verifique seus dados!'
