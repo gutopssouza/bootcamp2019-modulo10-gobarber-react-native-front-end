@@ -49,7 +49,7 @@ export function* signUp({ payload }) {
     // console.tron.log(err);
     Alert.alert(
       'Falha no cadastro',
-      'Falha no cadastro, verifique seus dados!'
+      `Falha no cadastro, verifique seus dados!${  err}`
     );
 
     yield put(signFailure());
