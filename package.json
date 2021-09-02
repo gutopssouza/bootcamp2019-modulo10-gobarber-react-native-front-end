@@ -15,7 +15,7 @@
     "@react-native-community/datetimepicker": "^2.1.0",
     "axios": "^0.19.0",
     "date-fns": "^2.4.1",
-    "immer": "^4.0.0",
+    "immer": "^9.0.6",
     "jetifier": "^1.6.4",
     "prop-types": "^15.7.2",
     "react": "16.9.0",
